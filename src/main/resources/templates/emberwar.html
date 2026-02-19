@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Emberwar</title>
+</head>
+<body>
+<h1>Start Emberwar Game</h1>
+<form th:action="@{/emberwar/ui/start}" method="post">
+    Player Name: <input type="text" name="playerName" required />
+    <button type="submit">Start Game</button>
+</form>
+</body>
+</html>

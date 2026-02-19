@@ -1,0 +1,23 @@
+Hexagonal architecture ports and adapters.
+Use domain driven design.
+Use entities and value objects and aggregate roots.
+Let's model a board game in java. The game is called emberwar. It is a simple 2D board game 10 by 10. Simple squares can be used to represent the tiles.
+
+Let's model the 2D board class in java. The board shall have 100 tiles (10 by 10).
+Let's model the tile class in java. The tiles can be 3 different types forest, plains mountain.
+Let's model unit.
+Let's model the player. The player owns the game. He controls exactly one unit.
+so tldr:
+Game -> Board and Player
+Board -> Tiles and one Unit
+Unit -> Owned by player
+
+Use java records.
+com.frodo.emberwar as project root.
+Use spring data jdbc.
+Make it super simple. It is for a POC.
+Use application, domain and infrastructure root packages.
+ONE simple use case for now.
+Start game with a preconfigured model in json for a board.
+The board is simply 10 by 10 squares for now.
+All my classes are inside application, domain, infrastrcture.
